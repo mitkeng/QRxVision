@@ -1,7 +1,7 @@
 # QRxVision
 Domain-specific compound-kinase assignment
 
-<img width="600"  alt="image" src="https://github.com/user-attachments/assets/b7bfb1fe-1753-4add-aa69-d829fd0ba2a5" />
+<img width="400"  alt="image" src="https://github.com/user-attachments/assets/b7bfb1fe-1753-4add-aa69-d829fd0ba2a5" />
 
 
 # Compound Similarity Analyzer
