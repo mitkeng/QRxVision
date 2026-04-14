@@ -6,7 +6,7 @@ Domain-specific compound-kinase assignment
 
 ## 🚀 1. Setup and Installation
 
-To get started, you'll need the `compound_analyzer.py` script, the `requirements.txt` file, and the necessary data files.
+To get started, you'll need the `QRxVision.py` script, the `requirements.txt` file, and the necessary data files.
 
 ### Clone the Repository
 
@@ -16,7 +16,7 @@ cd your-repository-name
 ```
 
 ### 📂 Required Components
-* 📜 **Scripts:** `compound_analyzer.py`, `requirements.txt`
+* 📜 **Scripts:** `QRxVision.py`, `requirements.txt`
 * 📊 **Datasets:** `Drug_ML_RE_training.csv`, `Cancer_drug3.csv`, `abnTOTAL_dataset3.csv`
 ```text
 
