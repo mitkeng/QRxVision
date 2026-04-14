@@ -20,7 +20,7 @@ cd your-repository-name
 * 📊 **Datasets:** `Drug_ML_RE_training.csv`, `Cancer_drug3.csv`, `abnTOTAL_dataset3.csv`
 ```text
 
-├── compound_analyzer.py      # Main execution script
+├── QRxVision.py      # Main execution script
 ├── requirements.txt          # Package dependencies
 ├── Drug_ML_RE_training.csv   # Dataset 1
 ├── Cancer_drug3.csv          # Dataset 2
@@ -41,11 +41,11 @@ pip install -r requirements.txt
 
 ```
 
-### 🛠 2. Running the compound_analyzer.py Script
+### 🛠 2. Running the QRxVision.py Script
 
-The `compound_analyzer.py` script is designed to be run from the command line using `argparse` to handle different input scenarios.
+The `QRxVision.py` script is designed to be run from the command line using `argparse` to handle different input scenarios.
 
-**Command Structure:** The basic command structure is `python compound_analyzer.py [arguments]`.
+**Command Structure:** The basic command structure is `python QRxVision.py [arguments]`.
 
 ### Available Arguments:
 
@@ -59,7 +59,7 @@ The `compound_analyzer.py` script is designed to be run from the command line us
 To find the top 7 similar compounds for Ripretinib and save the results:
 
 ```bash
-python compound_analyzer.py --smile "CCN1C2=CC(=NC=C2C=C(C1=O)C3=CC(=C(C=C3Br)F)NC(=O)NC4=CC=CC=C4)NC" --name "Ripretinib" --output_file single_compound_results.csv --top_n 7
+python QRxVision.py --smile "CCN1C2=CC(=NC=C2C=C(C1=O)C3=CC(=C(C=C3Br)F)NC(=O)NC4=CC=CC=C4)NC" --name "Ripretinib" --output_file single_compound_results.csv --top_n 7
 ```
 
 ## 📊 3. Understanding the Output
