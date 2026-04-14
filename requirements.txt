@@ -1,0 +1,11 @@
+pandas
+numpy
+tensorflow
+scikit-learn
+Pillow
+qrcode
+rdkit
+ase
+cirpy
+pubchempy
+opencv-python
