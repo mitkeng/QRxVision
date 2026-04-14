@@ -11,7 +11,7 @@ To get started, you'll need the `compound_analyzer.py` script, the `requirements
 ### Clone the Repository
 
 ```bash
-git clone https://github.com
+git clone https://github.com/mitkeng/QRxVision.git
 cd your-repository-name
 ```
 
