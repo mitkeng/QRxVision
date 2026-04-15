@@ -1,0 +1,14 @@
+
+pandas
+numpy
+tensorflow # This will install the GPU-compatible version if CUDA is available
+keras
+scikit-learn
+Pillow
+qrcode
+rdkit
+matplotlib
+ase
+cirpy
+pubchempy
+opencv-python
