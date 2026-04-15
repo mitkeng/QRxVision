@@ -7,7 +7,7 @@ Domain-specific compound-kinase assignment
 
 ## 🚀 1. Setup and Installation
 
-To get started, you'll need the `QRxVision.py` script, the `requirements.txt` file, and the necessary data files.
+To get started, you'll need the `run_qrxvision.py` script, the `requirements.txt` file, and the necessary data files.
 
 ### Clone the Repository
 
@@ -17,11 +17,11 @@ cd your-repository-name
 ```
 
 ### 📂 Required Components
-* 📜 **Scripts:** `QRxVision.py`, `requirements.txt`
+* 📜 **Scripts:** `run_qrxvision.py`, `requirements.txt`
 * 📊 **Datasets:** `Drug_ML_RE_training.csv`, `Cancer_drug3.csv`, `abnTOTAL_dataset3.csv`
 ```text
 
-├── QRxVision.py      # Main execution script
+├── run_qrxvision.py          # Main execution script
 ├── requirements.txt          # Package dependencies
 ├── Drug_ML_RE_training.csv   # Dataset 1
 ├── Cancer_drug3.csv          # Dataset 2
@@ -42,11 +42,11 @@ pip install -r requirements.txt
 
 ```
 
-### 🛠 2. Running the QRxVision.py Script
+### 🛠 2. Running the run_qrxvision.py Script
 
-The `QRxVision.py` script is designed to be run from the command line using `argparse` to handle different input scenarios.
+The `run_qrxvision.py` script is designed to be run from the command line using `argparse` to handle different input scenarios.
 
-**Command Structure:** The basic command structure is `python QRxVision.py [arguments]`.
+**Command Structure:** The basic command structure is `python run_qrxvision.py [arguments]`.
 
 ### Available Arguments:
 
@@ -60,7 +60,7 @@ The `QRxVision.py` script is designed to be run from the command line using `arg
 To find the top 7 similar compounds for Ripretinib and save the results:
 
 ```bash
-python QRxVision.py --smile "CCN1C2=CC(=NC=C2C=C(C1=O)C3=CC(=C(C=C3Br)F)NC(=O)NC4=CC=CC=C4)NC" --name "Ripretinib" --output_file single_compound_results.csv --top_n 7
+python run_qrxvision.py --smile "CCN1C2=CC(=NC=C2C=C(C1=O)C3=CC(=C(C=C3Br)F)NC(=O)NC4=CC=CC=C4)NC" --name "Ripretinib" --output_file single_compound_results.csv --top_n 7
 ```
 
 ## 📊 3. Understanding the Output
