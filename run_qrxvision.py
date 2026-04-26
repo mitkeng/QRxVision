@@ -210,6 +210,7 @@ def process_compound_similarity(compound_name, compound_SMILE, num_top_results=1
 
                 qr = qrcode.QRCode(
                     version=1,
+                    mask_pattern=0,
                     error_correction=qrcode.constants.ERROR_CORRECT_L,
                     box_size=10,
                     border=4,
