@@ -447,7 +447,7 @@ if __name__ == '__main__':
                 output_data = []
                 for item in top_similar_compounds:
                     output_data.append({
-                        'TestCompoundName': compound_name,
+                        'TestCompound': compound_name,
                         'TestCompoundSMILE': compound_SMILE,
                         'TestImage': item[0],
                         'ReferenceCompound': item[1].replace('.png', ''),
@@ -480,7 +480,7 @@ if __name__ == '__main__':
 
                 for item in results_for_compound:
                     final_output_list_for_csv.append({
-                        'TestCompoundName': compound_name,
+                        'TestCompound': compound_name,
                         'TestCompoundSMILE': compound_SMILE,
                         'TestImage': item[0],
                         'ReferenceCompound': item[1].replace('.png', ''),
