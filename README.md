@@ -74,7 +74,7 @@ If you specify `--output_file`, a CSV file will be generated. This file will con
 **Example structure for `single_compound_results.csv`:**
 
 
-| TestCompoundName | TestCompoundSMILE | TestImage | ReferenceCompound | SimilarityScore |
+| TestCompound | TestCompoundSMILE | TestImage | ReferenceCompound | SimilarityScore |
 | :--- | :--- | :--- | :--- | :--- |
 | Ripretinib | CCN1C2=CC(...) | test_4.png | Cenerimod | 0.9729 |
 | Ripretinib | CCN1C2=CC(...) | test_161.png | Erdafitinib | 0.9711 |
