@@ -77,6 +77,9 @@ If you specify `--output_file`, a CSV file will be generated. This file will con
 | Ripretinib | CCN1C2=CC(...) | test_161.png | Erdafitinib | 0.9711 |
 | ... | ... | ... | ... | ... |
 
+### Transitive Assignment Scheme
+<img width="785" alt="image" src="https://github.com/user-attachments/assets/a63acfa8-02cc-439a-a10e-a999db8a2cdb" />
+
 
 
 
