@@ -78,8 +78,8 @@ If you specify `--output_file`, a CSV file will be generated. This file will con
 | ... | ... | ... | ... | ... |
 
 ### Transitive Assignment Scheme
-<img width="785" alt="image" src="https://github.com/user-attachments/assets/a63acfa8-02cc-439a-a10e-a999db8a2cdb" />
 
+<img width="790"  alt="image" src="https://github.com/user-attachments/assets/fee4c949-9f11-4ac4-be7e-28ff6fa9f250" />
 
 
 
