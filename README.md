@@ -1,5 +1,5 @@
 # QRxVision
-### Domain-specific compound-kinase assignment
+### Domain-specific Drug-kinase assignment
 <img width="350"  alt="image" src="https://github.com/user-attachments/assets/b7bfb1fe-1753-4add-aa69-d829fd0ba2a5" />
 
 ## 🚀 1. Setup and Installation
