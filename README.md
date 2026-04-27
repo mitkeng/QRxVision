@@ -18,14 +18,14 @@ cd your-repository-name
 
 ### 📂 Required Components
 * 📜 **Scripts:** `run_qrxvision.py`, `requirements.txt`
-* 📊 **Datasets:** `Drug_ML_RE_training.csv`, `Cancer_drug3.csv`, `abnTOTAL_dataset3.csv`
+* 📊 **Datasets:** `Train_data.csv`, `Kinase_drug.csv`, `Total_dataset.csv`
 ```text
 
 ├── run_qrxvision.py          # Main execution script
 ├── requirements.txt          # Package dependencies
-├── Drug_ML_RE_training.csv   # Dataset 1
-├── Cancer_drug3.csv          # Dataset 2
-└── abnTOTAL_dataset3.csv     # Dataset 3
+├── Train_data.csv            # Dataset 1
+├── Kinase_drug.csv           # Dataset 2
+└── Total_dataset.csv         # Dataset 3
 
 ```
 
