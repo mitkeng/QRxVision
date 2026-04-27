@@ -171,11 +171,11 @@ def process_compound_similarity(compound_name, compound_SMILE, num_top_results=1
     # Removed shutil.rmtree("test_QRcode") and shutil.rmtree("Mole_feat3QR") from here
 
     # --- 1. Load Intrinsic Data and create drug_dic ---
-    pd.read_csv("Drug_ML_RE_training.csv") # This line is redundant if smiles_df is not used
+    pd.read_csv("Train_data.csv") # This line is redundant if smiles_df is not used
 
     drug_dic = {}
     try:
-        with open('Cancer_drug3.csv', 'r') as DR2:
+        with open('Kinase_drug.csv', 'r') as DR2:
             next(DR2) # Skip header
             for d2 in DR2:
                 try:
@@ -187,7 +187,7 @@ def process_compound_similarity(compound_name, compound_SMILE, num_top_results=1
                 except IndexError:
                     pass
     except FileNotFoundError:
-        print("Error: Cancer_drug3.csv not found.")
+        print("Error: Kinase_drug.csv not found.")
         return []
 
 
@@ -199,7 +199,7 @@ def process_compound_similarity(compound_name, compound_SMILE, num_top_results=1
         pass
 
     try:
-        with open('Drug_ML_RE_training.csv', 'r') as DR:
+        with open('Train_data.csv', 'r') as DR:
             next(DR) # Skip header
             s = 0
             for dr_line in DR:
@@ -226,13 +226,13 @@ def process_compound_similarity(compound_name, compound_SMILE, num_top_results=1
                 except Exception:
                     pass
     except FileNotFoundError:
-        print("Error: Drug_ML_RE_training.csv not found.")
+        print("Error: Train_data.csv not found.")
         return []
 
 
     # --- 3. User input and test data preparation ---
     test_SMILE = compound_SMILE
-    df_abnTOTAL = pd.read_csv('abnTOTAL_dataset3.csv')
+    df_abnTOTAL = pd.read_csv('Total_dataset.csv')
 
     num_rows_to_duplicate = 0 # As per original code, not duplicating for test input
     rows_to_duplicate = df_abnTOTAL.head(num_rows_to_duplicate)
@@ -418,17 +418,17 @@ if __name__ == '__main__':
     # --- End Global cleanup ---
 
     # Create dummy files for demonstration if they don't exist
-    if not os.path.exists('Drug_ML_RE_training.csv'):
-        pd.DataFrame([{'SMILES': 'CC(=O)Oc1ccccc1C(=O)O', 'Label1': 'A', 'Label2': 'R'}]).to_csv('Drug_ML_RE_training.csv', index=False)
-    if not os.path.exists('Cancer_drug3.csv'):
-        with open('Cancer_drug3.csv', 'w') as f:
+    if not os.path.exists('Train_data.csv.csv'):
+        pd.DataFrame([{'SMILES': 'CC(=O)Oc1ccccc1C(=O)O', 'Label1': 'A', 'Label2': 'R'}]).to_csv('Train_data.csv.csv', index=False)
+    if not os.path.exists('Kinase_drug.csv'):
+        with open('Kinase_drug.csv', 'w') as f:
             f.write('CompoundID,SMILES\n')
             f.write('Aspirin,CC(=O)Oc1ccccc1C(=O)O\n')
             f.write('Paracetamol,CC(=O)Nc1ccc(O)cc1\n')
-    if not os.path.exists('abnTOTAL_dataset3.csv'):
+    if not os.path.exists('Total_dataset.csv'):
         dummy_data = {'col' + str(i): [0] for i in range(1, 15)}
         dummy_data['smile'] = ['dummy_smile']
-        pd.DataFrame(dummy_data).to_csv('abnTOTAL_dataset3.csv', index=False)
+        pd.DataFrame(dummy_data).to_csv('Total_dataset.csv', index=False)
 
     if args.smile and args.csv_file:
         print("Error: Cannot specify both --smile and --csv_file. Choose one.")
