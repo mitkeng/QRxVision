@@ -1,5 +1,5 @@
 # $\text{QR}{\color{red}\text{x}}\text{Vision}$
-### Domain-specific drug-kinase assignment
+### A multimodal approach to domain-specific drug-kinase assignment using QR code embedding and image-based transfer learning
 <img width="350"  alt="image" src="https://github.com/user-attachments/assets/b7bfb1fe-1753-4add-aa69-d829fd0ba2a5" />
 
 ## 🚀 1. Setup and Installation
